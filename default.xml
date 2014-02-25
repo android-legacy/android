@@ -15,17 +15,20 @@
   <remote name="omni"
            fetch="https://github.com/"
            review="gerrit.omnirom.org" />
+  <remote  name="android-legacy"
+           fetch="https://github.com/android-legacy"
+           review="review.android-legacy.com" />
 
   <default revision="refs/tags/android-4.4.2_r2"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="AOKP/build" remote="aokp" revision="kitkat" groups="pdk">
+  <project path="build" name="android_build" remote="android-legacy" revision="kitkat" groups="pdk">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="art" name="AOKP/art" remote="aokp" revision="kitkat" />
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk"/>
-  <project path="bionic" name="AOKP/bionic" remote="aokp" revision="kitkat" groups="pdk" />
+  <project path="bionic" name="android_bionic" remote="android-legacy" revision="kitkat" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" remote="cm" revision="cm-11.0" />
@@ -323,7 +326,7 @@
   <project path="external/zlib" name="AOKP/external_zlib" remote="aokp" revision="kitkat" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="cm" revision="cm-11.0" groups="pdk" />
-  <project path="frameworks/base" name="AOKP/frameworks_base" remote="aokp" revision="kitkat" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="android-legacy" revision="kitkat" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -529,7 +532,7 @@
   <project path="prebuilts/runtime" name="platform/prebuilts/runtime" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" />
-  <project path="system/core" name="AOKP/system_core" remote="aokp" revision="kitkat" groups="pdk" />
+  <project path="system/core" name="android_system_core" remote="android-legacy" revision="kitkat" groups="pdk" />
   <project path="system/extras" name="AOKP/system_extras" remote="aokp" revision="kitkat" groups="pdk" />
   <project path="system/media" name="AOKP/system_media" remote="aokp" revision="kitkat" groups="pdk" />
   <project path="system/netd" name="CyanogenMod/android_system_netd" remote="cm" revision="cm-11.0" groups="pdk" />
@@ -555,7 +558,7 @@
   <project path="vendor/lge" name="AOKP/vendor_lge" remote="aokp" revision="kitkat" groups="notdefault,vendor,lge" />
   <project path="vendor/motorola" name="AOKP/vendor_motorola" remote="aokp" revision="kitkat" groups="notdefault,vendor,motorola" />
   <project path="vendor/oppo" name="AOKP/vendor_oppo" remote="aokp" revision="kitkat" groups="notdefault,vendor,oppo" />
-  <project path="vendor/samsung" name="AOKP/vendor_samsung" remote="aokp" revision="kitkat" groups="notdefault,vendor,samsung" />
+  <project path="vendor/samsung" name="android_vendor_samsung" remote="android-legacy" revision="kitkat" />
   <project path="vendor/sony" name="AOKP/vendor_sony" remote="aokp" revision="kitkat" groups="notdefault,vendor,sony" />
   <project path="vendor/asus" name="AOKP/vendor_asus" remote="aokp" revision="kitkat" groups="notdefault,vendor,asus" />
 
