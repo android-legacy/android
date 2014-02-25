@@ -19,11 +19,11 @@
            remote="aosp"
            sync-j="4" />
 
-  <remote  name="al"
+  <remote  name="android-legacy"
            fetch="https://github.com/android-legacy"
            review="review.android-legacy.com" />
 
-  <project path="build" name="android_build" remote="al" revision="android-4.4" groups="pdk" >
+  <project path="build" name="android_build" remote="android-legacy" revision="android-4.4" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -31,10 +31,10 @@
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="android_art" remote="omnirom" revision="android-4.4" />
-  <project path="bionic" name="android_bionic" remote="al" revision="android-4.4" />
+  <project path="bionic" name="android_bionic" remote="android-legacy" revision="android-4.4" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="al" revision="android-4.4"/>
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="android-legacy" revision="android-4.4"/>
   <project path="cts" name="platform/cts" groups="cts" />
   <project path="dalvik" name="android_dalvik" remote="omnirom" revision="android-4.4" />
   <project path="developers/build" name="platform/developers/build" />
@@ -251,15 +251,15 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="al" revision="android-4.4" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="al" revision="android-4.4" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="android-legacy" revision="android-4.4" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="android-legacy" revision="android-4.4" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="al" revision="android-4.4" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="android-legacy" revision="android-4.4" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/colorpicker" name="android_frameworks_opt_colorpicker" remote="omnirom" revision="android-4.4" />
@@ -284,8 +284,8 @@
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="omnirom" revision="android-4.4" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="omnirom" revision="android-4.4" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="al" revision="android-4.4" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="al" revision="android-4.4" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="aandroid-legacy" revision="android-4.4" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="android-legacy" revision="android-4.4" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="omnirom" revision="android-4.4" />
   <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="omnirom" revision="android-4.4" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="omnirom" revision="android-4.4" />
@@ -447,6 +447,6 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
-  <project path="vendor/omni" name="android_vendor_omni" remote="al" revision="android-4.4" />
+  <project path="vendor/omni" name="android_vendor_omni" remote="android-legacy" revision="android-4.4" />
   <project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" revision="android-4.4" />
 </manifest>
