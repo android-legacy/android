@@ -19,6 +19,10 @@
            remote="aosp"
            sync-j="4" />
 
+  <remote  name="al"
+           fetch="https://github.com/android-legacy"
+           review="review.android-legacy.com" />
+
   <project path="build" name="android_build" remote="omnirom" revision="android-4.4" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
