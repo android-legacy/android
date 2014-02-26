@@ -15,6 +15,7 @@
   <remote name="omni"
            fetch="https://github.com/"
            review="gerrit.omnirom.org" />
+
   <remote  name="android-legacy"
            fetch="https://github.com/android-legacy"
            review="review.android-legacy.com" />
