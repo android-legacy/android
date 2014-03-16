@@ -31,13 +31,17 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 To initialize your local repository using the CyanogenMod trees, use a command like this:
 
-    repo init -u git://github.com/CyanogenMod/android.git -b ics
+    repo init -u git://github.com/android-legacy/android.git -b ics
 
 Then to sync up:
 
     repo sync
 
-Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for building instructions.
+Next compile (for jena non-nfc only for this moment):
+
+    . build/envsetup.sh && brunch jenad
+
+Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for further building instructions.
 
 For more information on this Github Organization and how it is structured, 
 please [read the wiki article](http://wiki.cyanogenmod.org/index.php/Github_Organization)
@@ -47,4 +51,4 @@ Buildbot
 
 All supported devices are built nightly and periodically as changes are committed to ensure the source trees remain buildable.
 
-You can view the current build statuses at [CyanogenMod Jenkins](http://jenkins.cyanogenmod.org/)
+You can view the current build statuses at [android-legacy jenkins](http://jenkins.android-legacy.com/)
