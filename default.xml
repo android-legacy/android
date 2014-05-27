@@ -15,6 +15,7 @@
 
   <default revision="refs/tags/android-4.4.2_r2"
            remote="aosp"
+           sync-c="true"
            sync-j="4" />
 
   <remote  name="android-legacy"
