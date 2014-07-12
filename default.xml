@@ -238,7 +238,7 @@
   <project path="external/tagsoup" name="platform/external/tagsoup" />
   <project path="external/tcpdump" name="platform/external/tcpdump" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" />
-  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
+  <project path="external/tinyalsa" name="android_external_tinyalsa" remote="omnirom" revision="android-4.4" />
   <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
@@ -295,7 +295,7 @@
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="omnirom" revision="android-4.4" />
   <project path="hardware/qcom/display-caf" name="android-legacy/android_hardware_qcom_display_caf" remote="github" revision="android-4.4" />
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="github" revision="cm-11.0" groups="qcom" />
-  <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom" />
+  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="omnirom" revision="android-4.4" groups="qcom" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="omnirom" revision="android-4.4" />
   <project path="hardware/qcom/media-caf" name="android-legacy/android_hardware_qcom_media-caf" remote="github" revision="android-4.4" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
@@ -307,8 +307,8 @@
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="omnirom" revision="android-4.4" />
-  <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
-  <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
+  <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="omnirom" revision="android-4.4" />
+  <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="omnirom" revision="android-4.4" />
   <project path="libcore" name="android_libcore" remote="omnirom" revision="android-4.4" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
@@ -355,7 +355,7 @@
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
-  <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" />
+  <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="omnirom" revision="android-4.4" />
   <project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" />
   <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
   <project path="packages/experimental" name="platform/packages/experimental" />
@@ -438,7 +438,7 @@
   <project path="system/core" name="android-legacy/android_system_core" remote="github" revision="android-4.4" />
   <project path="system/extras" name="android_system_extras" remote="omnirom" revision="android-4.4" />
   <project path="system/media" name="android_system_media" groups="pdk" remote="omnirom" revision="android-4.4" />
-  <project path="system/netd" name="android-legacy/android_system_netd" remote="github" revision="android-4.4" groups="pdk" />
+  <project path="system/netd" name="android_system_netd" groups="pdk" remote="omnirom" revision="android-4.4" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/vold" name="android_system_vold" remote="omnirom" revision="android-4.4" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
