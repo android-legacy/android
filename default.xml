@@ -3,7 +3,7 @@
 
   <remote  name="github"
            fetch=".."
-           review="review.android-legacy.com" />
+           review="review.cas-online.nl" />
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
@@ -20,7 +20,7 @@
 
   <remote  name="android-legacy"
            fetch="https://github.com/android-legacy"
-           review="review.android-legacy.com" />
+           review="review.cas-online.nl" />
 
   <project path="build" name="android_build" remote="android-legacy" revision="android-4.4" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
