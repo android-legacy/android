@@ -7,7 +7,7 @@
 
   <remote  name="github"
            fetch=".."
-           review="review.android-legacy.com" />
+           review="review.cas-online.nl" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
